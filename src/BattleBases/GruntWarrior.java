@@ -3,7 +3,6 @@ package BattleBases;
 public class GruntWarrior extends AbstractWarrior {
 	
 	public GruntWarrior(){
-		this.spawn();
 	}
 	
 	@Override

@@ -7,6 +7,7 @@ public abstract class AbstractWarrior {
 	
 	public AbstractWarrior() {
 		super();
+		this.spawn();
 	}
 
 	public abstract void spawn();
