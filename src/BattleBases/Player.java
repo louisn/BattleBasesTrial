@@ -4,13 +4,13 @@ public class Player {
 	private String name = null;
 	private int bank = 1000;
 	private Base base = new Base();
-	private Army armyQueue = new Army();
+	private Army armyQueue;
 
-	public Player(String _name) {
+	public Player(String _name, Army army) {
 		this.name = _name;
 		this.bank = 1000;
 		this.base = new Base();
-		this.armyQueue = new Army();
+		this.armyQueue = army;
 
 	}
 

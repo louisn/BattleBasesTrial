@@ -8,13 +8,15 @@ public class Army {
 	private int headIndex;
 	private int tailIndex;
 
-	public Army() {
+	public Army(AbstractWarrior[] warriors) {
 //		armyQueue = new AbstractWarrior[numOfWarriors];//creates size of array
 //		for (int x = 0; x < numOfWarriors; x++) {
 //			armyQueue[x] = new GruntWarrior();
 //		}
+		armyQueue = warriors;
 		headIndex = 0;
-		tailIndex = numOfWarriors - 1;
+		numOfWarriors = warriors.length ;
+		tailIndex = numOfWarriors-1;
 		head = armyQueue[0];
 		tail = armyQueue[numOfWarriors - 1];
 	}

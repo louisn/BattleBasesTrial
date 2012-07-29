@@ -7,9 +7,9 @@ public class GameLoop {
 	Player player1 = null;
 	Player player2 = null;
 	public boolean isRunning = true;
-	public void init(){
-		player1 = new Player("Student");
-		player2 = new Player("Dorin");
+	public void init(Player p1, Player p2){
+		player1 = p1;
+		player2 = p2;
 	}
 	public void update(int gameTimer){
 		
