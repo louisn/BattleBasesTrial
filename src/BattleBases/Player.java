@@ -26,7 +26,11 @@ public class Player {
 				opponent.armyQueue.next();
 			}
 		} else
-			winner = this;
+			if(this.armyQueue.getHead() == null){
+				winner = opponent;
+			} else{
+				winner = this;
+			}
 		return winner;
 	}
 

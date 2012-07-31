@@ -20,6 +20,7 @@ public class GameApplication {
 		
 		// Create player two
 		Player player2;
+		warriors = new AbstractWarrior[4];
 		warriors[0] = new GoliathWarrior();
 		warriors[1] = new GoliathWarrior();
 		warriors[2] = new GoliathWarrior();
